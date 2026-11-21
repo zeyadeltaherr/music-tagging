@@ -1,0 +1,8 @@
+name: cnn_scratch
+seeds: [0, 1, 2]
+data: {kind: mtat, root: "C:/mtat_data", crops_per_clip: 2, n_eval_chunks: 7}
+model:
+  name: cnn
+  params: {channels: 64, emb_dim: 256, dropout: 0.3}
+train: {epochs: 20, batch_size: 32, eval_batch_size: 8, lr: 1.0e-3, weight_decay: 1.0e-4, amp: true, augment: true, patience: 4, num_workers: 0}
+output: {results_dir: experiments, ckpt_dir: checkpoints}

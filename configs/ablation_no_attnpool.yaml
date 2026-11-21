@@ -1,0 +1,8 @@
+name: attn_cnn_no_attnpool
+seeds: [0, 1, 2]
+data: {kind: mtat, root: "C:/mtat_data", crops_per_clip: 2, n_eval_chunks: 7}
+model:
+  name: attn_cnn
+  params: {channels: 32, d_model: 128, n_heads: 4, n_layers: 2, emb_dim: 256, dropout: 0.2, use_transformer: true, use_attention_pool: false}
+train: {epochs: 20, batch_size: 32, eval_batch_size: 8, lr: 5.0e-4, weight_decay: 1.0e-4, amp: true, augment: true, patience: 4, num_workers: 0}
+output: {results_dir: experiments, ckpt_dir: checkpoints}

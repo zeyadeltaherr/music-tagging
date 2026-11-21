@@ -1,0 +1,41 @@
+{
+  "name": "ast_official_fbank",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "tagging_mean_sd": {
+    "roc_auc_macro": [
+      0.904873931663008,
+      0.00030300135206915265
+    ],
+    "pr_auc_macro": [
+      0.44953324777423537,
+      0.002533836886768201
+    ],
+    "f1_macro": [
+      0.34784195030624465,
+      0.012489293194604503
+    ]
+  },
+  "retrieval_mean_sd": {
+    "precision@10": [
+      0.8174976915974147,
+      1.3597399555105182e-16
+    ],
+    "jaccard@10": [
+      0.31484245777110775,
+      0.0
+    ]
+  },
+  "cost_first_seed": {
+    "params": 86225714,
+    "model_size_mb": 329.0090751647949,
+    "train_time_s": 1038.3314051628113,
+    "test_pass_s": 85.77812361717224,
+    "latency_ms_per_clip": 17.164099990623072,
+    "peak_gpu_mem_mb": 370.681640625,
+    "hardware": "NVIDIA GeForce RTX 4050 Laptop GPU (6.0 GB)"
+  }
+}

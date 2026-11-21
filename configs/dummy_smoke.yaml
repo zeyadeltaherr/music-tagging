@@ -1,0 +1,9 @@
+# Smoke test on synthetic data -- results are meaningless, it only checks the code runs.
+name: smoke_cnn
+seeds: [0, 1]
+data: {kind: dummy, n_tags: 10, n_train: 256, n_val: 96, n_test: 96}
+model:
+  name: cnn
+  params: {channels: 16, emb_dim: 64, dropout: 0.2}
+train: {epochs: 5, batch_size: 32, lr: 1.0e-3, weight_decay: 1.0e-4, amp: true, augment: false, patience: 5, num_workers: 0}
+output: {results_dir: experiments/smoke, ckpt_dir: checkpoints/smoke}

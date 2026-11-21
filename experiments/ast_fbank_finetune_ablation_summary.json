@@ -1,0 +1,39 @@
+{
+  "name": "ast_fbank_finetune_ablation",
+  "seeds": [
+    0
+  ],
+  "tagging_mean_sd": {
+    "roc_auc_macro": [
+      0.7279163226536521,
+      0.0
+    ],
+    "pr_auc_macro": [
+      0.18074232618039499,
+      0.0
+    ],
+    "f1_macro": [
+      0.04091384351096391,
+      0.0
+    ]
+  },
+  "retrieval_mean_sd": {
+    "precision@10": [
+      0.44559095106186525,
+      0.0
+    ],
+    "jaccard@10": [
+      0.13410382233006865,
+      0.0
+    ]
+  },
+  "cost_first_seed": {
+    "params": 86225714,
+    "model_size_mb": 329.0108518600464,
+    "train_time_s": 4510.544924497604,
+    "test_pass_s": 82.65202808380127,
+    "latency_ms_per_clip": 17.746350000379607,
+    "peak_gpu_mem_mb": 1967.9697265625,
+    "hardware": "NVIDIA GeForce RTX 4050 Laptop GPU (6.0 GB)"
+  }
+}

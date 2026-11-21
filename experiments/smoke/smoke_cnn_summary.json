@@ -1,0 +1,39 @@
+{
+  "name": "smoke_cnn",
+  "seeds": [
+    0
+  ],
+  "tagging_mean_sd": {
+    "roc_auc_macro": [
+      0.8683955417140965,
+      0.0
+    ],
+    "pr_auc_macro": [
+      0.6910425756345517,
+      0.0
+    ],
+    "f1_macro": [
+      0.08960573476702509,
+      0.0
+    ]
+  },
+  "retrieval_mean_sd": {
+    "precision@10": [
+      0.6931818181818182,
+      0.0
+    ],
+    "jaccard@10": [
+      0.3184172077922078,
+      0.0
+    ]
+  },
+  "cost_first_seed": {
+    "params": 90588,
+    "model_size_mb": 0.3696422576904297,
+    "train_time_s": 1.1953787803649902,
+    "test_pass_s": 0.013089656829833984,
+    "latency_ms_per_clip": 3.1066499941516668,
+    "peak_gpu_mem_mb": 68.51611328125,
+    "hardware": "NVIDIA GeForce RTX 4050 Laptop GPU (6.0 GB)"
+  }
+}

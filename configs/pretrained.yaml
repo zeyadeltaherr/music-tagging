@@ -1,0 +1,29 @@
+name: ast_pretrained
+seeds: [0, 1, 2]
+data:
+  kind: mtat
+  root: "C:/mtat_data"
+  crops_per_clip: 1
+  n_eval_chunks: 7
+model:
+  name: ast
+  params:
+    checkpoint: "MIT/ast-finetuned-audioset-10-10-0.4593"
+    freeze_backbone: true
+    target_length: 1024
+    input_mean: -4.2677393
+    input_std: 4.5689974
+    dropout: 0.2
+train:
+  epochs: 8
+  batch_size: 1
+  eval_batch_size: 1
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  amp: true
+  augment: false
+  patience: 3
+  num_workers: 0
+output:
+  results_dir: experiments
+  ckpt_dir: checkpoints

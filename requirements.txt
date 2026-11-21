@@ -1,0 +1,15 @@
+# Install PyTorch separately with the CUDA build (see README), then:
+torchaudio
+librosa
+scikit-learn
+numpy
+pandas
+matplotlib
+gradio
+faiss-cpu
+soundfile
+tqdm
+pyyaml
+huggingface_hub
+transformers
+joblib

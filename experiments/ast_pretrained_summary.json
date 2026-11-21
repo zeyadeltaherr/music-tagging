@@ -1,0 +1,41 @@
+{
+  "name": "ast_pretrained",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "tagging_mean_sd": {
+    "roc_auc_macro": [
+      0.8899440793703839,
+      0.0010335406426499215
+    ],
+    "pr_auc_macro": [
+      0.41715883925022984,
+      0.0013952511871959097
+    ],
+    "f1_macro": [
+      0.2340491619260602,
+      0.015326043123983538
+    ]
+  },
+  "retrieval_mean_sd": {
+    "precision@10": [
+      0.7786472760849493,
+      1.3597399555105182e-16
+    ],
+    "jaccard@10": [
+      0.2958031961640225,
+      0.0
+    ]
+  },
+  "cost_first_seed": {
+    "params": 86225714,
+    "model_size_mb": 329.0082244873047,
+    "train_time_s": 1367.3213925361633,
+    "test_pass_s": 497.9639506340027,
+    "latency_ms_per_clip": 17.26885000243783,
+    "peak_gpu_mem_mb": 571.60546875,
+    "hardware": "NVIDIA GeForce RTX 4050 Laptop GPU (6.0 GB)"
+  }
+}
